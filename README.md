@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://raw.githubusercontent.com/bednar/launch-lagoon/HEAD/logo.png" alt="Launch-Lagoon Logo" width="150px">
+</p>
+
 # Launch-Lagoon
 
 Welcome to the Launch-Lagoon repository, your go-to solution for crafting outstanding landing pages for mobile apps. Blending modern aesthetics with functionality, this template is designed to captivate your audience and elevate your app's online presence.
