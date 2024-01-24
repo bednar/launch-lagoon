@@ -15,6 +15,7 @@ Launch-Lagoon is more than just a landing page template - it's a gateway to show
 - **Responsive Design**: Ensures your landing page looks stunning on all devices, from desktops to smartphones.
 - **Gatsby.js Framework**: Leverages the power of Gatsby.js for fast, efficient, and high-performing web experiences.
 - **Tailwind CSS Integration**: Utilizes the utility-first CSS framework for designing sleek, custom interfaces with ease.
+- **DaisyUI Components**: Incorporating DaisyUI, the most popular, free and open-source component library for Tailwind CSS, to provide an extensive range of beautiful, fully customizable UI components.
 - **SEO Optimized**: Built with the best SEO practices in mind to help your website rank higher and get noticed.
 - **Easy to Customize**: Simple and straightforward customization options to reflect your app's branding and style.
 
@@ -22,6 +23,7 @@ Launch-Lagoon is more than just a landing page template - it's a gateway to show
 
 - **Gatsby.js**: A modern web framework for React, offering lightning-fast performance and powerful features.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs without leaving your HTML.
+- **DaisyUI**: A Tailwind CSS plugin that adds a layer of styled components and layouts, making it easier to build a beautiful and consistent UI with minimal effort.
 - **React**: A JavaScript library for building user interfaces, known for its efficiency and flexibility.
 - **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine, used for developing scalable network applications.
 
