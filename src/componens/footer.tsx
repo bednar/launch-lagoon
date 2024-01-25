@@ -2,27 +2,26 @@ import * as React from "react";
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="footer p-10 bg-neutral text-neutral-content">
-            <nav>
-                <header className="footer-title">Services</header>
-                <a className="link link-hover">Branding</a>
-                <a className="link link-hover">Design</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <header className="footer-title">Company</header>
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <header className="footer-title">Legal</header>
-                <a className="link link-hover">Terms of use</a>
-                <a className="link link-hover">Privacy policy</a>
-                <a className="link link-hover">Cookie policy</a>
-            </nav>
+        <footer className="bg-white">
+            <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+
+                <div className="mt-8 border-t border-gray-100 pt-8">
+                    <div className="sm:flex sm:justify-between">
+                        <p className="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+
+                        <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+                            <li>
+                                <a href="#" className="text-gray-500 transition hover:opacity-75"> Terms &
+                                    Conditions </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     )
 }
