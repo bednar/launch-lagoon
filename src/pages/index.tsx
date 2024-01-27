@@ -1,9 +1,9 @@
 import * as React from "react"
 import type {PageProps} from "gatsby"
-import {Header} from "../componens/header";
-import {Footer} from "../componens/footer";
-import {Reviews} from "../componens/reviews";
-import {Promotion} from "../componens/promotion";
+import {Header} from "../components/header";
+import {Footer} from "../components/footer";
+import {Reviews} from "../components/reviews";
+import {Promotion} from "../components/promotion";
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
