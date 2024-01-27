@@ -25,7 +25,7 @@ interface ReviewProps {
 
 const Review: React.FC<ReviewProps> = ({user, review, stars}) => {
     const starsArray = Array.from({ length: 5 }, (_, i) =>
-        <Star color={i < stars ? "currentColor" : "grey"} />
+        <Star key={i} color={i < stars ? "currentColor" : "grey"} />
     );
     return (<div className="mb-8 sm:break-inside-avoid">
         <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
