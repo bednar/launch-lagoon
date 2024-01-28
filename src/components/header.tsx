@@ -1,8 +1,8 @@
 import * as React from "react";
-import {queryConfig} from "../data/queries";
+import {useQueryConfig} from "../data/queries";
 
 export const Header: React.FC = () => {
-    let config = queryConfig();
+    let config = useQueryConfig();
     return (
         <header className="bg-white">
             <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">

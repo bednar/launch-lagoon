@@ -1,5 +1,5 @@
 import * as React from "react";
-import {queryConfig} from "../data/queries";
+import {useQueryConfig} from "../data/queries";
 
 interface StarProps {
     color: string;
@@ -25,7 +25,7 @@ interface ReviewProps {
 }
 
 const Review: React.FC<ReviewProps> = ({user, review, stars}) => {
-    let config = queryConfig();
+    let config = useQueryConfig();
     const starsArray = Array.from({ length: 5 }, (_, i) =>
         <Star key={i} color={i < stars ? "currentColor" : "grey"} />
     );

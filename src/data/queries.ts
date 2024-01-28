@@ -15,7 +15,7 @@ interface ConfigProps {
 /**
  * The configuration data such as the name of the app and the primary color.
  */
-export const queryConfig = (): ConfigProps => {
+export const useQueryConfig = (): ConfigProps => {
     const data = useStaticQuery(graphql`
         query {
             allDataYaml {
