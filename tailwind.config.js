@@ -8,4 +8,12 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /bg-.+/,
+    },
+    {
+      pattern: /text-.+/,
+    },
+  ],
 }

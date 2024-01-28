@@ -1,4 +1,5 @@
 import * as React from "react";
+import {queryConfig} from "../data/queries";
 
 interface StarProps {
     color: string;
@@ -24,6 +25,7 @@ interface ReviewProps {
 }
 
 const Review: React.FC<ReviewProps> = ({user, review, stars}) => {
+    let config = queryConfig();
     const starsArray = Array.from({ length: 5 }, (_, i) =>
         <Star key={i} color={i < stars ? "currentColor" : "grey"} />
     );
@@ -37,7 +39,7 @@ const Review: React.FC<ReviewProps> = ({user, review, stars}) => {
                 />
 
                 <div>
-                    <div className="flex justify-center gap-0.5 text-indigo-600">
+                    <div className={`flex justify-center gap-0.5 text-${config.primaryColor}`}>
                         {starsArray}
                     </div>
 

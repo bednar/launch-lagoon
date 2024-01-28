@@ -1,6 +1,8 @@
 import * as React from "react";
+import {queryConfig} from "../data/queries";
 
 export const Promotion: React.FC = () => {
+    let config = queryConfig();
     return (
         <section>
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -24,7 +26,7 @@ export const Promotion: React.FC = () => {
 
                         <a
                             href="#"
-                            className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                            className={`mt-8 inline-block rounded bg-${config.primaryColor} px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400`}
                         >
                             Get Started Today
                         </a>

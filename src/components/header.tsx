@@ -1,12 +1,14 @@
 import * as React from "react";
+import {queryConfig} from "../data/queries";
 
 export const Header: React.FC = () => {
+    let config = queryConfig();
     return (
         <header className="bg-white">
             <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex-1 md:flex md:items-center md:gap-12">
-                        <a className="block text-indigo-600" href="/">
+                        <a className={`block text-${config.primaryColor}`} href="/">
                             <span className="sr-only">Home</span>
                             <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -16,7 +18,7 @@ export const Header: React.FC = () => {
                             </svg>
                         </a>
                         <span
-                            className="text-4xl font-bold text-center font-sans text-indigo-600 rounded">APP NAME</span>
+                            className={`text-4xl font-bold text-center font-sans text-${config.primaryColor} rounded`}>{config.appName}</span>
                     </div>
                 </div>
             </div>
