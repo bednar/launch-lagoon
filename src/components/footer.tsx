@@ -16,12 +16,12 @@ export const Footer: React.FC<FooterProps> = ({companyName}) => {
 
                         <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                             <li>
-                                <a href="#" className="text-gray-500 transition hover:opacity-75"> Terms &
+                                <a href="/" className="text-gray-500 transition hover:opacity-75"> Terms &
                                     Conditions </a>
                             </li>
 
                             <li>
-                                <a href="#" className="text-gray-500 transition hover:opacity-75">Privacy Policy</a>
+                                <a href="/" className="text-gray-500 transition hover:opacity-75">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
