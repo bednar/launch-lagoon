@@ -52,6 +52,27 @@ To get started with Launch-Lagoon:
    gatsby build
    ```
 
+## Template Configuration
+
+This template can be easily customized through the `src/data/config.yaml` file, allowing you to tailor fundamental aspects of your landing page's look and content.
+
+### Config.yaml File
+
+The `config.yaml` file contains the following settings:
+
+- `appName`: The name of your app. This name is used in the header and as the title of the pages.
+- `primaryColor`: The primary color of the theme. This color is used in the header and other elements. The color should be from the Tailwind CSS color palette.
+
+#### Configuration Example
+
+```yaml
+# The name of the app, used in the header and the title of the pages.
+appName: "My App"
+# Primary color of the theme, used in the header and some other elements,
+# should be from the Tailwind CSS color palette.
+primaryColor: "rose-400"
+```
+
 ## Contributing
 
 Contributions to enhance Launch-Lagoon are warmly welcomed. Whether it's bug fixes, feature additions, or improvements in documentation, your help is much appreciated.
