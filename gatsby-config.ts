@@ -17,6 +17,7 @@ const config: GatsbyConfig = {
               path: `${__dirname}/src/data/`,
           },
       },
+      "gatsby-transformer-remark",
       "gatsby-plugin-postcss"
   ],
   // GitHub Pages repository name

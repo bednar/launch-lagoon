@@ -2,6 +2,10 @@ import {graphql, useStaticQuery} from "gatsby";
 
 interface ConfigProps {
     /**
+     * The name of the company, it is used in the footer.
+     */
+    companyName: string;
+    /**
      * The name of the app, it is used in the header and the title of the pages.
      */
     appName: string;
@@ -20,6 +24,7 @@ export const useQueryConfig = (): ConfigProps => {
         query {
             allDataYaml {
                 nodes {
+                    companyName
                     appName
                     primaryColor
                 }

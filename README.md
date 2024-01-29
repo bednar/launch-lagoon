@@ -54,24 +54,41 @@ To get started with Launch-Lagoon:
 
 ## Template Configuration
 
-This template can be easily customized through the `src/data/config.yaml` file, allowing you to tailor fundamental aspects of your landing page's look and content.
+This template can be easily customized through the `src/data/config.yaml` file, 
+allowing you to tailor fundamental aspects of your landing page's look and content. 
+Additionally, you can specify the content of your "Privacy Policy" 
+and "Terms and Conditions" through Markdown files.
 
 ### Config.yaml File
 
 The `config.yaml` file contains the following settings:
 
+- `companyName`: The name of your company. This name is used in the footer of the landing page.
 - `appName`: The name of your app. This name is used in the header and as the title of the pages.
 - `primaryColor`: The primary color of the theme. This color is used in the header and other elements. The color should be from the Tailwind CSS color palette.
 
 #### Configuration Example
 
 ```yaml
+# The name of the company, it is used in the footer.
+companyName: "My Company"
 # The name of the app, used in the header and the title of the pages.
 appName: "My App"
+
 # Primary color of the theme, used in the header and some other elements,
 # should be from the Tailwind CSS color palette.
 primaryColor: "rose-400"
 ```
+### Privacy Policy and Terms and Conditions
+
+To customize the "Privacy Policy" and "Terms and Conditions" content:
+
+1. Edit the Markdown files located at:
+   - `src/data/content/privacy-policy.md` for Privacy Policy
+   - `src/data/content/terms-and-conditions.md` for Terms and Conditions
+
+These files will be processed and displayed on their respective pages on your site. 
+You can use Markdown formatting to style the content as needed.
 
 ## Contributing
 

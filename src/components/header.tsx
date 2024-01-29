@@ -17,8 +17,10 @@ export const Header: React.FC = () => {
                                 />
                             </svg>
                         </a>
-                        <span
-                            className={`text-4xl font-bold text-center font-sans text-${config.primaryColor} rounded`}>{config.appName.toUpperCase()}</span>
+                        <a className={`block text-${config.primaryColor}`} href="/">
+                            <span
+                                className={`text-4xl font-bold text-center font-sans text-${config.primaryColor} rounded`}>{config.appName.toUpperCase()}</span>
+                        </a>
                     </div>
                 </div>
             </div>
