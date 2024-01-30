@@ -4,14 +4,16 @@ import {Footer} from "./footer";
 
 interface LayoutProps {
     children: React.ReactNode;
+    isHomepage: boolean;
 }
 
-export const Layout: React.FC<LayoutProps> = ({children}) => {
+export const Layout: React.FC<LayoutProps> = ({children, isHomepage }) => {
+    let linkPrefix =  isHomepage ? "" : "../";
     return (
         <body className="font-sans">
-        {<Header/>}
+        {<Header linkPrefix={linkPrefix}/>}
         {children}
-        {<Footer/>}
+        {<Footer linkPrefix={linkPrefix}/>}
         </body>
     )
 }

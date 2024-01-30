@@ -6,7 +6,7 @@ import {MarkdownPageDataProps} from "../data/typed";
 const TermsPage: React.FC<MarkdownPageDataProps> = ({data}) => {
     const markdown = data.markdownRemark;
     return (
-        <Layout>
+        <Layout isHomepage={false}>
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <h1 className="text-2xl font-bold my-4">{markdown.frontmatter.title}</h1>
                 <div className="text-gray-700">

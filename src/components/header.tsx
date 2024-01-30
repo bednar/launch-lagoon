@@ -1,14 +1,19 @@
 import * as React from "react";
 import {useQueryConfig} from "../data/queries";
+import {Link} from "gatsby";
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+    linkPrefix: string;
+}
+
+export const Header: React.FC<HeaderProps> = ({linkPrefix}) => {
     let config = useQueryConfig();
     return (
         <header className="bg-white">
             <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex-1 md:flex md:items-center md:gap-12">
-                        <a className={`block text-${config.primaryColor}`} href="/">
+                        <Link to={`./${linkPrefix}`} className={`block text-${config.primaryColor}`}>
                             <span className="sr-only">Home</span>
                             <svg className="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -16,11 +21,11 @@ export const Header: React.FC = () => {
                                     fill="currentColor"
                                 />
                             </svg>
-                        </a>
-                        <a className={`block text-${config.primaryColor}`} href="/">
+                        </Link>
+                        <Link to={`./${linkPrefix}`} className={`block text-${config.primaryColor}`}>
                             <span
                                 className={`text-4xl font-bold text-center font-sans text-${config.primaryColor} rounded`}>{config.appName.toUpperCase()}</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

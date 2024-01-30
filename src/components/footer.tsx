@@ -1,7 +1,12 @@
 import * as React from "react";
 import {useQueryConfig} from "../data/queries";
+import {Link} from "gatsby";
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+    linkPrefix: string;
+}
+
+export const Footer: React.FC<FooterProps> = ({linkPrefix}) => {
     let config = useQueryConfig();
     let year = new Date().getFullYear();
     return (
@@ -14,10 +19,10 @@ export const Footer: React.FC = () => {
 
                         <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
                             <li>
-                                <a href="/terms" className="text-gray-500 transition hover:opacity-75">Terms & Conditions</a>
+                                <Link to={`${linkPrefix}terms`} className="text-gray-500 transition hover:opacity-75">Terms & Conditions</Link>
                             </li>
                             <li>
-                                <a href="/privacy" className="text-gray-500 transition hover:opacity-75">Privacy Policy</a>
+                                <Link to={`${linkPrefix}privacy`} className="text-gray-500 transition hover:opacity-75">Privacy Policy</Link>
                             </li>
                             <li>
                                 <a href="https://github.com/bednar/launch-lagoon" className="text-gray-500 transition hover:opacity-75">Launch Lagoon</a>
