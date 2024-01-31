@@ -10,6 +10,14 @@ interface ConfigProps {
      */
     appName: string;
     /**
+     * The URL of the app in the App Store, it is used in the promotion.
+     */
+    appStoreLink?: string;
+    /**
+     * The URL of the app in the Play Store, it is used in the promotion.
+     */
+    playStoreLink?: string;
+    /**
      * Primary color of the theme used in the header and some other elements,
      * it is from the Tailwind CSS color palette
      */
@@ -26,6 +34,8 @@ export const useQueryConfig = (): ConfigProps => {
                 nodes {
                     companyName
                     appName
+                    appStoreLink
+                    playStoreLink
                     primaryColor
                 }
             }

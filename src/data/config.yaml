@@ -3,6 +3,11 @@ companyName: "My Company"
 # The name of the app, it is used in the header and the title of the pages.
 appName: "My App"
 
+# The URL of the app in the App Store, it is used in the promotion.
+appStoreLink: "https://apps.apple.com/us/app/my-app/id1234567890"
+# The URL of the app in the Play Store, it is used in the promotion.
+playStoreLink: "https://play.google.com/store/apps/details?id=com.mycompany.myapp"
+
 # Primary color of the theme used in the header and some other elements,
 # it is from the Tailwind CSS color palette.
 primaryColor: "rose-400"

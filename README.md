@@ -67,6 +67,11 @@ The `config.yaml` file contains the following settings:
 - `appName`: The name of your app. This name is used in the header and as the title of the pages.
 - `primaryColor`: The primary color of the theme. This color is used in the header and other elements. The color should be from the Tailwind CSS color palette.
 
+Additionally, you can specify promotional links to your app in both the App Store and Play Store:
+
+- `appStoreLink`: The URL of your app in the App Store, used for promotion.
+- `playStoreLink`: The URL of your app in the Play Store, also used for promotion.
+
 #### Configuration Example
 
 ```yaml
@@ -74,6 +79,12 @@ The `config.yaml` file contains the following settings:
 companyName: "My Company"
 # The name of the app, used in the header and the title of the pages.
 appName: "My App"
+
+# Promotional links
+# The URL of the app in the App Store, used in the promotion.
+appStoreLink: "https://apps.apple.com/us/app/my-app/id1234567890"
+# The URL of the app in the Play Store, used in the promotion.
+playStoreLink: "https://play.google.com/store/apps/details?id=com.mycompany.myapp"
 
 # Primary color of the theme, used in the header and some other elements,
 # should be from the Tailwind CSS color palette.
@@ -89,6 +100,33 @@ To customize the "Privacy Policy" and "Terms and Conditions" content:
 
 These files will be processed and displayed on their respective pages on your site. 
 You can use Markdown formatting to style the content as needed.
+
+### Promotion Section
+
+In addition to configuring your app's basic details, you can also customize a special "Promotion Section" to highlight key features or special offers related to your app. This section can be tailored to catch the user's eye and promote your app effectively.
+
+To customize the "Promotion Section":
+
+1. Edit the Markdown file located at:
+   - `src/data/content/promotion.md`
+
+This file allows you to add detailed promotional content, which will be prominently displayed on your landing page. 
+You can utilize Markdown formatting to include text, links, images, and other elements to create an engaging promotional section.
+
+The "Promotion Section" is an excellent way to provide potential users with compelling reasons to download your app, 
+showcase limited-time offers, or highlight unique features that set your app apart from the competition.
+
+#### Example of Promotion Markdown Content
+
+```markdown
+---
+title: "Special Launch Offer!"
+---
+
+For a limited time, download **My App** and receive an exclusive in-app bonus!
+
+Don't miss out on this incredible opportunity to enhance your experience with **My App**. Offer valid until end of month.
+```
 
 ## Contributing
 

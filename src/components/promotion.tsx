@@ -1,6 +1,8 @@
 import * as React from "react";
 import {useQueryConfig} from "../data/queries";
 import {graphql, useStaticQuery} from "gatsby";
+import AppStoreBadge from '../images/app-store-badge.png';
+import GooglePlayBadge from '../images/google-play-badge.png';
 
 export const Promotion: React.FC = () => {
     let config = useQueryConfig();
@@ -29,12 +31,22 @@ export const Promotion: React.FC = () => {
                     <div className="lg:py-24">
                         <h2 className="text-3xl font-bold sm:text-4xl">{markdown.frontmatter.title}</h2>
                         <p className="mt-4 text-gray-600" dangerouslySetInnerHTML={{__html: markdown.html}}/>
-
-                        <a href="/"
-                           className={`mt-8 inline-block rounded bg-${config.primaryColor} px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400`}
-                        >
-                            Get Started Today
-                        </a>
+                        {config.appStoreLink &&
+                            (
+                                <a href={config.appStoreLink} target="_blank" rel="noopener noreferrer"
+                                   className={"inline-block py-10 pr-5"}>
+                                    <img src={AppStoreBadge} alt="Download on the App Store" className="h-16 w-auto"/>
+                                </a>
+                            )
+                        }
+                        {config.playStoreLink &&
+                            (
+                                <a href={config.playStoreLink} target="_blank" rel="noopener noreferrer"
+                                   className={"inline-block py-10"}>
+                                    <img src={GooglePlayBadge} alt="Get it on Google Play" className="h-16 w-auto"/>
+                                </a>
+                            )
+                        }
                     </div>
                 </div>
             </div>
