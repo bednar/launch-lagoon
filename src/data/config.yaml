@@ -15,4 +15,4 @@ playStoreLink: "https://play.google.com/store/apps/details?id=com.mycompany.myap
 
 # Primary color of the theme used in the header and some other elements,
 # it is from the Tailwind CSS color palette.
-primaryColor: "rose-400"
+primaryColor: "purple-800"

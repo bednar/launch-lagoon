@@ -97,8 +97,19 @@ playStoreLink: "https://play.google.com/store/apps/details?id=com.mycompany.myap
 
 # Primary color of the theme, used in the header and some other elements,
 # should be from the Tailwind CSS color palette.
-primaryColor: "rose-400"
+primaryColor: "purple-800"
 ```
+
+### Customizing the App/Web Icon
+
+The icon of the web/app, which serves as the favicon and app icon, can be customized by replacing 
+the image file located at `src/images/icon.png`. 
+This icon is used across various parts of the template, including the browser tab, bookmarks, 
+and potentially within the app itself if integrated accordingly.
+
+Ensure your custom icon matches the dimensions and format of the existing `icon.png` 
+for optimal display across all devices and platforms.
+
 ### Privacy Policy and Terms and Conditions
 
 To customize the "Privacy Policy" and "Terms and Conditions" content:
