@@ -10,6 +10,14 @@ interface ConfigProps {
      */
     appName: string;
     /**
+     * The description of the app, it is used in SEO HTML meta tags.
+     */
+    appDescription: string;
+    /**
+     * The keywords of the app, it is used in SEO HTML meta tags.
+     */
+    appKeywords: string;
+    /**
      * The URL of the app in the App Store, it is used in the promotion.
      */
     appStoreLink?: string;
@@ -34,6 +42,8 @@ export const useQueryConfig = (): ConfigProps => {
                 nodes {
                     companyName
                     appName
+                    appDescription
+                    appKeywords
                     appStoreLink
                     playStoreLink
                     primaryColor

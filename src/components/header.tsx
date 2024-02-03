@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useQueryConfig} from "../data/queries";
+import {useQueryConfig} from "../hooks/queries";
 import {Link} from "gatsby";
 
 interface HeaderProps {

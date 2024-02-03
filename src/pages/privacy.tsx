@@ -1,7 +1,8 @@
 import * as React from "react"
 import {graphql} from "gatsby"
 import {Layout} from "../components/layout";
-import {MarkdownPageDataProps} from "../data/typed";
+import {MarkdownPageDataProps} from "../hooks/typed";
+import {SEO} from "../components/seo";
 
 const PrivacyPage: React.FC<MarkdownPageDataProps> = ({data}) => {
     const markdown = data.markdownRemark;
@@ -28,3 +29,5 @@ query {
 }`
 
 export default PrivacyPage
+
+export const Head = () => <SEO title={"Privacy Policy"}/>

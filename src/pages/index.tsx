@@ -3,6 +3,7 @@ import {PageProps} from "gatsby"
 import {Reviews} from "../components/reviews";
 import {Promotion} from "../components/promotion";
 import {Layout} from "../components/layout";
+import {SEO} from "../components/seo";
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
@@ -14,3 +15,5 @@ const IndexPage: React.FC<PageProps> = () => {
 }
 
 export default IndexPage
+
+export const Head = () => <SEO />

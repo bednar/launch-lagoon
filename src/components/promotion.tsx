@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useQueryConfig} from "../data/queries";
+import {useQueryConfig} from "../hooks/queries";
 import {graphql, useStaticQuery} from "gatsby";
 import AppStoreBadge from '../images/app-store-badge.png';
 import GooglePlayBadge from '../images/google-play-badge.png';

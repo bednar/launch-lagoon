@@ -1,7 +1,12 @@
 # The name of the company, it is used in the footer.
 companyName: "My Company"
+
 # The name of the app, it is used in the header and the title of the pages.
 appName: "My App"
+# The description of the app, it is used in SEO HTML meta tags.
+appDescription: "My App is a mobile app that does something cool."
+# The keywords of the app, it is used in SEO HTML meta tags.
+appKeywords: "app, cool, mobile, something"
 
 # The URL of the app in the App Store, it is used in the promotion.
 appStoreLink: "https://apps.apple.com/us/app/my-app/id1234567890"

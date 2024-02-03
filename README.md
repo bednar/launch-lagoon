@@ -65,6 +65,8 @@ The `config.yaml` file contains the following settings:
 
 - `companyName`: The name of your company. This name is used in the footer of the landing page.
 - `appName`: The name of your app. This name is used in the header and as the title of the pages.
+- `appDescription`: A brief description of your app. This description is utilized in SEO HTML meta tags to provide search engines with a clear summary of your app.
+- `appKeywords`: A list of keywords associated with your app. These keywords are used in SEO HTML meta tags to help improve your app's search engine ranking.
 - `primaryColor`: The primary color of the theme. This color is used in the header and other elements. The color should be from the Tailwind CSS color palette.
 
 Additionally, you can specify promotional links to your app in both the App Store and Play Store:
@@ -77,8 +79,15 @@ Additionally, you can specify promotional links to your app in both the App Stor
 ```yaml
 # The name of the company, it is used in the footer.
 companyName: "My Company"
+
 # The name of the app, used in the header and the title of the pages.
 appName: "My App"
+
+# SEO settings
+# A brief description of your app for SEO HTML meta tags.
+appDescription: "My App is a mobile app that does something cool."
+# A list of keywords for SEO HTML meta tags.
+appKeywords: "app, cool, mobile, something"
 
 # Promotional links
 # The URL of the app in the App Store, used in the promotion.
