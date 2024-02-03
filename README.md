@@ -128,6 +128,30 @@ For a limited time, download **My App** and receive an exclusive in-app bonus!
 Don't miss out on this incredible opportunity to enhance your experience with **My App**. Offer valid until end of month.
 ```
 
+### App Screenshot Configuration
+
+To visually showcase your app's features or user interface directly on your landing page, 
+you can specify a screenshot of your application. This helps to give potential users 
+a glimpse of what to expect from your app before they decide to download it.
+
+#### Customizing the App Screenshot
+
+The template is designed to display an app screenshot, which can be easily customized by replacing the default image file:
+
+- `src/images/app-screenshot.png`
+
+To update the app screenshot, simply replace the `app-screenshot.png` file with your desired image. 
+Ensure that your new screenshot is named `app-screenshot.png` and is located in the `src/images/` directory.
+
+#### Image Recommendations
+
+For the best visual impact, we recommend using a high-quality PNG image of your app's most engaging screen. 
+Consider the following guidelines for your screenshot:
+
+- **Resolution**: Aim for a clear and high-resolution image that is not blurry when scaled.
+- **Aspect Ratio**: The image should maintain a reasonable aspect ratio that fits well within the design of the landing page without requiring excessive scaling.
+- **Content**: Choose a screenshot that effectively communicates the core functionality or unique features of your app.
+
 ## Contributing
 
 Contributions to enhance Launch-Lagoon are warmly welcomed. Whether it's bug fixes, feature additions, or improvements in documentation, your help is much appreciated.
