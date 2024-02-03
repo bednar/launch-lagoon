@@ -40,7 +40,7 @@ To get started with Launch-Lagoon:
    ```
 3. Install dependencies:
    ```
-   yarn install
+   npm install
    ```
 4. Start the development server:
    ```
