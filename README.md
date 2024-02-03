@@ -16,7 +16,6 @@ Launch-Lagoon is more than just a landing page template - it's a gateway to show
 - **Gatsby.js Framework**: Leverages the power of Gatsby.js for fast, efficient, and high-performing web experiences.
 - **Tailwind CSS Integration**: Utilizes the utility-first CSS framework for designing sleek, custom interfaces with ease.
 - **HyperUI Components**: Utilizing HyperUI, a comprehensive library of Tailwind CSS components, to provide a wide range of beautifully designed, fully customizable UI components to speed up your development process.
-- **SEO Optimized**: Built with the best SEO practices in mind to help your website rank higher and get noticed.
 - **Easy to Customize**: Simple and straightforward customization options to reflect your app's branding and style.
 
 ## Technologies Used
@@ -41,7 +40,7 @@ To get started with Launch-Lagoon:
    ```
 3. Install dependencies:
    ```
-   npm install
+   yarn install
    ```
 4. Start the development server:
    ```
@@ -57,7 +56,7 @@ To get started with Launch-Lagoon:
 This template can be easily customized through the `src/data/config.yaml` file, 
 allowing you to tailor fundamental aspects of your landing page's look and content. 
 Additionally, you can specify the content of your "Privacy Policy" 
-and "Terms and Conditions" through Markdown files.
+and "Terms and Conditions" through Markdown files and so much more.
 
 ### Config.yaml File
 
@@ -179,7 +178,3 @@ Contributions to enhance Launch-Lagoon are warmly welcomed. Whether it's bug fix
 ## License
 
 [MIT License](LICENSE)
-
----
-
-Embark on your journey to a stunning web presence with Launch-Lagoon - where functionality meets beauty, and your app takes center stage.
